@@ -3,7 +3,6 @@
 <template>
   <div>
     <hero />
-    <strategy />
     <team />
     <contact />
   </div>
@@ -13,13 +12,12 @@
 
 <script>
 import Hero from '~/components/Hero.vue';
-import Strategy from '~/components/Strategy.vue';
 import Team from '~/components/Team.vue';
 import Contact from '~/components/Contact.vue';
 
 export default {
   name: 'App',
-  components: { Hero, Strategy, Team, Contact },
+  components: { Hero, Team, Contact },
   data () {
     return { }
   },
