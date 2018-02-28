@@ -1,3 +1,5 @@
+<!-- Template -->
+
 <template>
   <div class="cube-container">
     <div class="cube">
@@ -11,6 +13,8 @@
   </div>
 </template>
 
+<!-- Script -->
+
 <script>
 export default {
   name: 'Cube',
@@ -20,13 +24,17 @@ export default {
 }
 </script>
 
+<!-- Style -->
+
 <style lang="scss" scoped>
+
 // =======CUBE CONTAINER ======= //
+
 .cube-container {
-  margin-left: 100px;
-  height: 300px;
-  width: 300px;
-  perspective: 400px;// distance between the scene and the viewer
+  margin: 0 0 0 170px;
+  height: 250px;
+  width: 250px;
+  perspective: 1500px;// distance between the scene and the viewer
   perspective-origin: 50% 50%;
   transition: .3s all ease;
 
@@ -42,7 +50,7 @@ export default {
   height: 100%;
   position: absolute;
   transition: .5s all ease-in-out;
-  // preserve 3fd effect of child elements
+  // preserve 3d effect of child elements
   // default value is 'flat'
   // preserve effects of child elements
   transform-style: preserve-3d;
@@ -57,9 +65,9 @@ export default {
     box-sizing: border-box;
     margin: 0;
     display: block;
-    height: 300px;
+    height: 250px;
     position: absolute;
-    width: 300px;
+    width: 250px;
     font-size: 2em;
     line-height: 6em;
     text-align: center;
@@ -69,27 +77,27 @@ export default {
 // =======BEGIN CUBE PANELS======= //
 
 .cube .front {
-  transform: translateZ(150px);
+  transform: translateZ(125px);
   background: rgba(0.2,0.2,0.2,.5);
 }
 .cube .back {
-  transform: rotateY(180deg) rotateX(0deg) translateZ(150px);
+  transform: rotateY(180deg) rotateX(0deg) translateZ(125px);
   background: rgba(0.2,0.2,0.2,.6);
 }
 .cube .left {
-  transform: rotateY(-90deg) translateZ(150px);
+  transform: rotateY(-90deg) translateZ(125px);
   background: rgba(1,1,1,.5);
 }
 .cube .right {
-  transform: rotateY(90deg) translateZ(150px);
+  transform: rotateY(90deg) translateZ(125px);
   background: rgba(1,1,1,.4);
 }
 .cube .top {
-  transform: rotateX(90deg) translateZ(150px);
+  transform: rotateX(90deg) translateZ(125px);
   background: rgba(255,255,255,.2);
 }
 .cube .bottom {
-  transform: rotateX(-90deg) rotateZ(-180deg) translateZ(150px);
+  transform: rotateX(-90deg) rotateZ(-180deg) translateZ(125px);
   background: rgba(255,255,255,.2);
   opacity: .55;
 }

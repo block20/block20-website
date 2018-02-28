@@ -1,6 +1,8 @@
+<!-- Template -->
+
 <template>
-  <div id="strategy" class="page page-2">
-    <div class="page-content page-2-content">
+  <div id="strategy" class="page strategy">
+    <div class="page-content strategy-content">
       <h2>Smart Investing</h2>
       <h1>Scoring Rubric</h1>
       <p>
@@ -10,34 +12,38 @@
   </div>
 </template>
 
+<!-- Script -->
+
 <script>
 export default {
-  name: 'Page2',
+  name: 'Strategy',
   data () {
     return { }
   },
 }
 </script>
 
+<!-- Style -->
+
 <style lang="scss">
-.page-2 {
-  height: 840px !important;
+.strategy {
+  align-content: stretch;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
   background-color: #302F36;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.9) 100%), url('./../assets/financial_background.jpg');
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.9) 100%), url('~/assets/img/bg-hero.jpg');
   color: white;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: flex-start;
-	align-content: stretch;
+  height: 840px !important;
 
   @media only screen and (max-width: 575px) {
     height: 520px !important;
   }
 }
 
-.page-2-content {
+.strategy-content {
   width: 60%;
 
   @media only screen and (max-width: 575px) {
@@ -47,8 +53,8 @@ export default {
   h1 {
     font-size: 4.0rem;
     line-height: 4.0rem;
-    max-width: 480px;
     margin: 10px 0 20px -5px;
+    max-width: 480px;
     text-transform: uppercase;
 
     @media only screen and (max-width: 575px) {
@@ -59,10 +65,10 @@ export default {
   }
 
   h2 {
+    color: rgb(110, 110, 110);
+    letter-spacing: .25rem;
     margin: 0;
     text-transform: uppercase;
-    letter-spacing: .25rem;
-    color: rgb(110, 110, 110);
 
     @media only screen and (max-width: 575px) {
       font-size: 1.0rem;
@@ -70,10 +76,10 @@ export default {
   }
 
   p {
+    color: #A09DB1;
     font-size: 1.0rem;
     line-height: 2.0rem;
     max-width: 480px;
-    color: #A09DB1;
 
     @media only screen and (max-width: 575px) {
       line-height: 1.5rem;

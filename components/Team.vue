@@ -1,6 +1,8 @@
+<!-- Template -->
+
 <template>
-  <div id="team" class="page page-3">
-    <div class="page-content page-3-content">
+  <div id="team" class="page team">
+    <div class="page-content team-content">
       <div class="companies">
         <div class="header-bar">
           <div class="bar"></div>
@@ -21,6 +23,7 @@
           <li class="company-logo" id="uiuc"></li>
         </ul>
       </div>
+
       <div class="projects">
         <div class="header-bar">
           <div class="bar"></div>
@@ -37,52 +40,70 @@
           <li class="company-logo" id="icon"></li>
         </ul>
       </div>
+
+      <div class="partners">
+        <div class="header-bar">
+          <div class="bar"></div>
+          <h1>Partners</h1>
+          <div class="bar"></div>
+        </div>
+        <p>
+          We work closely with these partners to help projects succeed.
+        </p>
+        <ul class="company-logos">
+          <li class="company-logo" id="tokendata"></li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
 
+<!-- Script -->
+
 <script>
 export default {
-  name: 'Page3',
+  name: 'Team',
   data () {
     return { }
   },
 }
 </script>
 
+<!-- Style -->
+
 <style lang="scss">
-.page-3 {
+.team {
   background-color: #FFFFFF;
 }
 
-.page-3-content {
-  padding: 80px 0 60px 0;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+.team-content {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
   max-width: 900px;
+  padding: 100px 0;
 
-  .companies {
+  .companies, .projects {
     margin-bottom: 60px;
   }
 
   .header-bar {
-    width: 100%;
-    margin-bottom: 20px;
+    align-content: flex-start;
+    align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    align-items: center;
-    align-content: flex-start;
+    margin-bottom: 20px;
+    width: 100%;
 
     .bar {
-      width: 32.5%;
-      height: 1px;
       background-color: #D4D4D4;
+      height: 1px;
+      width: 32.5%;
 
       @media only screen and (max-width: 480px) {
         display: none;
@@ -90,37 +111,43 @@ export default {
     }
 
     h1 {
-      color: #666666;
-      font-size: 1.125rem;
-      text-transform: uppercase;
+      color: #333;
+      font-size: 1.5rem;
       letter-spacing: 4px;
-      text-align: center;
       margin: auto 20px;
+      text-align: center;
+      text-transform: uppercase;
     }
   }
 
+  p {
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
   ul {
-    list-style-type: none;
+    align-content: center;
+    align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    align-content: center;
-    padding: 0;
+    list-style-type: none;
     margin: 0;
+    padding: 0;
   }
 
   .company-logo {
-    width: 180px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: grayscale(100%);
     height: 70px;
     margin: 10px 20px;
-    filter: grayscale(100%);
     opacity: .35;
     text-align: center;
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    width: 180px;
 
     &:hover {
       filter: none;
@@ -129,58 +156,55 @@ export default {
   }
 
   #facebook {
-    background-image: url('./../assets/logo_fb.png');
+    background-image: url('~/assets/img/logos/facebook.png');
   }
 
   #google {
-    background-image: url('./../assets/logo_google.png');
+    background-image: url('~/assets/img/logos/google.png');
   }
 
   #stripe {
-    background-image: url('./../assets/logo_stripe.png');
+    background-image: url('~/assets/img/logos/stripe.png');
   }
 
   #yc {
-    background-image: url('./../assets/logo_yc.png');
+    background-image: url('~/assets/img/logos/yc.png');
   }
 
   #uber {
-    background-image: url('./../assets/logo_uber.png');
+    background-image: url('~/assets/img/logos/uber.png');
   }
 
   #stanford {
-    background-image: url('./../assets/logo_stanford.png');
+    background-image: url('~/assets/img/logos/stanford.png');
   }
 
   #berkeley {
-    background-image: url('./../assets/logo_berkeley.png');
+    background-image: url('~/assets/img/logos/berkeley.png');
   }
 
   #uiuc {
-    background-image: url('./../assets/logo_uiuc.png');
+    background-image: url('~/assets/img/logos/uiuc.png');
   }
 
   #icon {
-    background-image: url('./../assets/logo_icon.png');
+    background-image: url('~/assets/img/logos/icon.png');
   }
 
   #zrx {
-    background-image: url('./../assets/logo_zrx.png');
+    background-image: url('~/assets/img/logos/zrx.png');
   }
 
   #eth {
-    background-image: url('./../assets/logo_ethereum.png');
+    background-image: url('~/assets/img/logos/ethereum.png');
   }
 
   #omg {
-    background-image: url('./../assets/logo_omg.png');
+    background-image: url('~/assets/img/logos/omg.png');
   }
 
-  p {
-    color: rgb(161, 161, 161);
-    font-size: .85rem;
-    text-align: center;
-    margin-bottom: 20px;
+  #tokendata {
+    background-image: url('~/assets/img/logos/tokendata.png');
   }
 }
 </style>

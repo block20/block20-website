@@ -1,46 +1,57 @@
+<!-- Template -->
+
 <template>
   <div class="top-nav">
     <div class="logo"></div>
     <ul class="nav-items">
-      <a href="#" v-scroll-to="'#strategy'"><li class="nav-item">Strategy</li></a>
-      <a href="#" v-scroll-to="'#team'"><li class="nav-item">Team</li></a>
-      <a href="#" v-scroll-to="'#contact'"><li class="nav-item">Contact</li></a>
+      <a href="#" v-scroll-to="'#strategy'">
+        <li class="nav-item">Strategy</li>
+      </a>
+      <a href="#" v-scroll-to="'#team'">
+        <li class="nav-item">Team</li>
+      </a>
+      <a href="#" v-scroll-to="'#contact'">
+        <li class="nav-item">Contact</li>
+      </a>
     </ul>
   </div>
 </template>
 
+<!-- Script -->
 
 <script>
 export default {
-  name: 'Nav',
+  name: 'Navigation',
   data () {
     return { }
   },
 }
 </script>
 
+<!-- Style -->
+
 <style lang="scss">
 .top-nav {
+  align-content: center;
+  align-items: flex-start;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: flex-start;
-  align-content: center;
   margin: 0 auto;
-  padding: 20px;
-  width: 80%;
+  padding: 30px 0 0;
+  width: 60%;
 
   @media only screen and (max-width: 575px) {
-    width: 90%;
+    width: 80%;
   }
 }
 
 .logo {
   margin: auto 5px;
-  width: 140px;
-  height: 30px;
-  background: url('./../assets/logo_blocktwenty.png');
+  width: 200px;
+  height: 50px;
+  background: url('~/assets/img/logo-white.png');
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -50,12 +61,12 @@ export default {
 }
 
 .nav-items {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
   list-style: none;
 
   @media only screen and (max-width: 480px) {
@@ -64,9 +75,10 @@ export default {
 }
 
 .nav-item {
-  margin: 0 20px;
-  cursor: pointer;
   border-bottom: 2px solid #1D1D20;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin: 10px 20px 0;
 
   &:hover {
     border-bottom: 2px solid #FFFFFF;

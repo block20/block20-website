@@ -1,70 +1,77 @@
+<!-- Template -->
+
 <template>
-  <div class="page page-1">
-    <nav-bar />
-    <div class="page-content page-1-content">
+  <div class="page hero">
+    <navigation />
+    <div class="page-content hero-content">
       <cube />
       <div class="content-body">
         <h1>A Future with Blockchain</h1>
         <p>
-          We are team of technologists that help build and fund the protocols of tomorrow.
+          We are a team of technologists that help build and fund the protocols of tomorrow.
         </p>
-        <a class="typeform-share button" href="https://stitchroom.typeform.com/to/ZdSrxl" data-mode="popup" target="_blank">Get in Touch</a>
+        <a class="button" href="mailto:block20group@gmail.com" target="_blank">
+          Get in Touch
+        </a>
       </div>
     </div>
   </div>
 </template>
 
+<!-- Script -->
+
 <script>
 import Cube from './Cube.vue';
-import NavBar from './Nav.vue';
-
+import Navigation from './Navigation.vue';
 
 export default {
-  name: 'Page1',
-  components: { Cube, NavBar },
+  name: 'Hero',
+  components: { Cube, Navigation },
   data () {
     return { }
   },
 }
 </script>
 
+<!-- Style -->
+
 <style lang="scss">
-.page-1 {
-  height: 90vh;
-  color: white;
+.hero {
   background-color: #1D1D20;
   background-repeat: no-repeat;
   background-size: contain;
+  color: white;
+  height: 85vh;
 
   @media only screen and (max-width: 575px) {
     height: 440px !important;
   }
 }
 
-.page-1-content {
+.hero-content {
+  align-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
   height: 340px;
-  margin-top: 120px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: flex-start;
+  margin-top: 150px;
 
   @media only screen and (max-width: 575px) {
     margin-top: 0;
   }
 
   .content-body {
-    margin-left: -200px;
+    align-content: flex-start;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     flex-wrap: nowrap;
     justify-content: space-around;
-    align-items: flex-start;
-    align-content: flex-start;
+    margin-left: 270px;
     z-index: 1;
-    flex-grow: 1;
 
     @media only screen and (max-width: 575px) {
       margin-left: auto;
@@ -74,8 +81,8 @@ export default {
   h1 {
     font-size: 4.0rem;
     line-height: 4.0rem;
-    max-width: 480px;
     margin: 0 0 20px 0;
+    max-width: 480px;
 
     @media only screen and (max-width: 575px) {
       font-size: 2.0rem;
@@ -85,11 +92,13 @@ export default {
 
   p {
     font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-bottom: 15px;
     max-width: 480px;
 
     @media only screen and (max-width: 575px) {
       font-size: 1.0rem;
-      line-height: 1.0rem;
+      line-height: 1.5rem;
     }
   }
 }
