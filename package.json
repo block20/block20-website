@@ -6,7 +6,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt generate && mv ./dist ./docs"
+    "build": "nuxt generate && rm -rf ./docs && mv ./dist ./docs"
   },
   "dependencies": {
     "@nuxtjs/font-awesome": "^1.0.3",
