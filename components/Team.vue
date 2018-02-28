@@ -48,7 +48,7 @@
           <div class="bar"></div>
         </div>
         <p>
-          We work closely with these partners to help projects succeed.
+          We work closely with our partners to help projects succeed.
         </p>
         <ul class="company-logos">
           <li class="company-logo" id="tokendata"></li>
