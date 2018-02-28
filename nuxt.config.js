@@ -3,7 +3,7 @@ module.exports = {
   // Header metadata
 
   head: {
-    title: 'Block 20 Group – Building and Funding the Protocols of Tomorrow',
+    title: 'Block 20 Group: Building and Funding the Protocols of Tomorrow',
 
     meta: [
       { charset: 'utf-8' },

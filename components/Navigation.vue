@@ -3,14 +3,16 @@
 <template>
   <div class="top-nav">
     <div class="logo"></div>
-    <ul class="nav-items">
-      <a href="#" v-scroll-to="'#team'">
-        <li class="nav-item">Team</li>
-      </a>
-      <a href="#" v-scroll-to="'#contact'">
-        <li class="nav-item">Contact</li>
-      </a>
-    </ul>
+    <no-ssr>
+      <ul class="nav-items">
+        <a href="#" v-scroll-to="'#team'">
+          <li class="nav-item">Team</li>
+        </a>
+        <a href="#" v-scroll-to="'#contact'">
+          <li class="nav-item">Contact</li>
+        </a>
+      </ul>
+    </no-ssr>
   </div>
 </template>
 
