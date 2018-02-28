@@ -4,9 +4,6 @@
   <div class="top-nav">
     <div class="logo"></div>
     <ul class="nav-items">
-      <a href="#" v-scroll-to="'#strategy'">
-        <li class="nav-item">Strategy</li>
-      </a>
       <a href="#" v-scroll-to="'#team'">
         <li class="nav-item">Team</li>
       </a>
