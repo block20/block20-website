@@ -1,17 +1,12 @@
 {
-  "name": "block-20",
+  "name": "block20-website",
+  "description": "Block 20 Group Website",
   "version": "1.0.0",
-  "description": "Block Twenty static website",
-  "author": "thomas@newmissioncity.com",
   "private": true,
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint",
-    "heroku-postbuild": "npm run build"
+    "build": "nuxt generate && mv ./dist ./docs"
   },
   "dependencies": {
     "@nuxtjs/font-awesome": "^1.0.3",
