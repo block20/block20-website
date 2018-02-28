@@ -60,6 +60,6 @@ module.exports = {
 
   plugins: [
     { src: '~plugins/webFontLoader.js', ssr: false },
-    '~/plugins/vue-scrollto.js'
+    '~/plugins/vueScrollTo.js'
   ]
 }
