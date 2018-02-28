@@ -1,8 +1,12 @@
+<!-- Template -->
+
 <template>
   <div>
     <nuxt/>
   </div>
 </template>
+
+<!-- Style -->
 
 <style>
 html {
