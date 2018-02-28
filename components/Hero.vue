@@ -21,8 +21,8 @@
 <!-- Script -->
 
 <script>
-import Cube from './Cube.vue';
-import Navigation from './Navigation.vue';
+import Cube from '~/components/Cube.vue';
+import Navigation from '~/components/Navigation.vue';
 
 export default {
   name: 'Hero',
